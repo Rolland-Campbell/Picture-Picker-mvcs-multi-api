@@ -9,8 +9,10 @@ let _photoApi = axios.create({
 class PhotosService {
   getPhoto() {
     return _photoApi.get().then(res => {
-      console.log(res);
+      console.log("from sandbox photos", res);
       store.commit("photo", res.data);
+      console.log("store photo", store.State.photo);
+
     });
   }
 }
