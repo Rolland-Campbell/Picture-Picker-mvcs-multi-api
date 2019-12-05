@@ -1,5 +1,4 @@
 import store from "../store.js";
-import Pokemon from "../Models/Pokemon.js"
 
 
 // @ts-ignore
@@ -15,7 +14,6 @@ class PokemonsService {
       console.log("from pokemon api", res.data);
       store.commit("pokemonPhoto", res.data);
       console.log("store pokemon photo", store.State.pokemonPhoto);
-
     });
   }
 }
