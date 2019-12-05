@@ -6,7 +6,7 @@ let _nasaApi = axios.create({
   timeout: 8000
 })
 
-class PhotosService {
+class NasaPhotosService {
 
   async getPhoto() {
     return await _nasaApi.get().then(res => {
@@ -18,5 +18,5 @@ class PhotosService {
   }
 }
 
-const service = new PhotosService();
+const service = new NasaPhotosService();
 export default service;

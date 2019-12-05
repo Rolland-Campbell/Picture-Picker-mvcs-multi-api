@@ -1,7 +1,8 @@
 
 let _state = {
   photo: {},
-  nasaPhoto: {}
+  nasaPhoto: {},
+  pokemonPhoto: {}
 };
 
 /** Collection of listeners to be called based on keyed state changes
@@ -9,7 +10,8 @@ let _state = {
  */
 let _listeners = {
   photo: [],
-  nasaPhoto: []
+  nasaPhoto: [],
+  pokemonPhoto: []
 };
 
 //NOTE You should not need to change the code from this point down
