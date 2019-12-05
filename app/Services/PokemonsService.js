@@ -4,17 +4,16 @@ import Pokemon from "../Models/Pokemon.js"
 
 // @ts-ignore
 let _pokemonApi = axios.create({
-  baseURL: "https://bcw-sandbox.herokuapp.com/api/Winter19/pokemon",
+  baseURL: "https://pokeapi.co/api/v2/pokemon/bulbasaur",
   timeout: 3000
 })
 
 class PokemonsService {
 
   async getPhoto() {
-    let random = Math.floor((Math.random() * 12) + 1);
     return await _pokemonApi.get().then(res => {
-      console.log("from pokemon api", res.data.data);
-      store.commit("pokemonPhoto", res.data.data);
+      console.log("from pokemon api", res.data);
+      store.commit("pokemonPhoto", res.data);
       console.log("store pokemon photo", store.State.pokemonPhoto);
 
     });

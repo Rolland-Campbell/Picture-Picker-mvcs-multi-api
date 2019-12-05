@@ -24,8 +24,8 @@ justify-items: center;
 }
 
 .photo {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   border: black;
   border-style: solid;
   border-width: 3px;

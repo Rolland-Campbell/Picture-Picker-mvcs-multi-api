@@ -4,7 +4,7 @@ import store from "../store.js";
 //Private
 function _draw() {
   let template = ""
-  let photo = store.State.pokemonPhoto;
+  let photo = store.State.pokemonPhoto.sprites.front_default;
   document.querySelector("#pokemonPic").innerHTML = template += `<img src="${photo}" class="photo">`
 }
 
